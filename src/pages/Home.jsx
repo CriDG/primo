@@ -1,8 +1,5 @@
 import React from 'react'
 import Libro from '../components/Libro';
-import Card from '../components/Card';
-import Button from '../components/Button';
-import LikeButton from '../components/LikeButton';
 export default function Home() {
     const libri = [
         { id: 1, titolo: "Il Signore degli Anelli", genere: "Fantasy", anno: 1954, autore: "J.R.R. Tolkien", immagine: "https://example.com/lotr.jpg", quantita: 5, numeroPagine: 1216, isDisponibile: true },
@@ -34,8 +31,6 @@ export default function Home() {
     <div>Home</div>
     <h1>Benvenuto nella Libreria Online 📖</h1>
 
-      
-     
         <div
         style={{
             display: "flex",
@@ -46,12 +41,10 @@ export default function Home() {
             minHeight: "100vh", // Per centrare anche verticalmente
         }}
         >  
-           
-                 
-   
            {libri.map(libro => (
-            <Card key={libro.id} isDisponibile={libro.isDisponibile}>
+    
             <Libro 
+            key={libro.id} 
             genere ={libro.genere} 
             titolo={libro.titolo}
             anno={libro.anno}
@@ -61,10 +54,9 @@ export default function Home() {
             numeroPagine={libro.numeroPagine}
             isDisponibile={libro.isDisponibile}
             />
-               <Button des='Descrizione' msg = '👍'/> 
-               <LikeButton/>
-            </Card>   
+          
            )) }
+          
               </div>
      
         </>

@@ -11,7 +11,7 @@ const LikeButton = () => {
   return (
     <AiFillHeart
       onClick={handleClick}
-      style={{ color: liked ? 'red' : 'gray', cursor: 'pointer' }}
+      style={{ color: liked ? 'red' : 'white', cursor: 'pointer' }}
       size={24}
     />
   );

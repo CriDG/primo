@@ -1,7 +1,4 @@
 import Libro from "../components/Libro";
-import Card from "../components/Card";
-import Button from "../components/Button";
-import LikeButton from "../components/LikeButton";
 
 export default function Storia() {
  
@@ -36,9 +33,8 @@ export default function Storia() {
       <div className="libri-container">
     {libri.filter (libro => libro.genere === 'Storico')
                 .map(libro => (
-     
-                 <Card key={libro.id} isDisponibile={libro.isDisponibile}>
                  <Libro 
+                 key={libro.id}
                  genere ={libro.genere} 
                  titolo={libro.titolo}
                  anno={libro.anno}
@@ -49,11 +45,8 @@ export default function Storia() {
                  isDisponibile={libro.isDisponibile}
                
                  />
-                    <Button des='Push!' msg = '👍'/>
-                     <LikeButton/>
-                 </Card> 
-
                 ))}
+                
           </div>
 </div>
 

@@ -4,10 +4,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    width: 70%; /* Occupa l'80% del suo contenitore */
-    min-width: 300px; /* Non sarà mai più piccolo di 300px */
-    max-width: 500px; /* Non sarà mai più grande di 500px */
+    
+    width: 500px; /* Fissa la larghezza per tutte le card */
+    min-height: 180px; /* Imposta un'altezza minima uguale per tutte */
+    
     margin: auto;
+    border-radius: 10px;
+
 }
 
 .container-info {
@@ -32,6 +35,11 @@
     text-transform: uppercase;
     text-align: center;
     background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Occupa tutta l'altezza della card */
+    width: 100%; /* Occupa tutta la larghezza della card */
 }
 
 .quantita-bassa {

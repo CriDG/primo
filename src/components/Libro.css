@@ -1,0 +1,62 @@
+/*  */
+.container-libro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70%; /* Occupa l'80% del suo contenitore */
+    min-width: 300px; /* Non sarà mai più piccolo di 300px */
+    max-width: 500px; /* Non sarà mai più grande di 500px */
+    margin: auto;
+}
+
+.container-info {
+    flex: 0.8; /* Il testo occupa più spazio a sinistra, mentre l'immagine rimane a destra. */
+    text-align: left;
+   
+}
+
+.container-img {
+    flex: 1;
+    text-align: right;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px; /* Angoli arrotondati per l'immagine */
+    margin-left: 15px;
+}
+
+.libro-non-disponibile {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    background: red;
+}
+
+.quantita-bassa {
+    color: red;
+    font-weight: bold;
+}
+
+.messaggio-non-disponibile {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.quantita-zero {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    width: fit-content;
+}
+

@@ -29,7 +29,7 @@ export default function Storia() {
   return (
     <>
     <div> 
-    <div>Storia</div>
+    <h1>Libri di Storia</h1>
       <div className="libri-container">
     {libri.filter (libro => libro.genere === 'Storico')
                 .map(libro => (

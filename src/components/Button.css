@@ -1,0 +1,34 @@
+.container-button{
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .button-details {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button-details:hover {
+    background-color: #45a049; /* Verde più scuro al passaggio del mouse */
+  }
+  
+  .details-box {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f4f4f4; /* Sfondo grigio chiaro */
+    border-left: 5px solid #4CAF50; /* Bordo colorato */
+    font-size: 18px;
+    color: #333; /* Testo scuro */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  

@@ -28,8 +28,8 @@ export default function Home() {
   return (
 
 <> 
-    <div>Home</div>
-    <h1>Benvenuto nella Libreria Online 📖</h1>
+   
+    <h2>Benvenuto nella Libreria Online 📖</h2>
 
         <div
         style={{
@@ -38,21 +38,24 @@ export default function Home() {
             justifyContent: "center", // Centra orizzontalmente
             alignItems: "center", // Centra verticalmente
             gap: "10px", // Distanza tra le card
-            minHeight: "100vh", // Per centrare anche verticalmente
+            minHeight: "auto", // Per centrare anche verticalmente
         }}
         >  
            {libri.map(libro => (
     
             <Libro 
             key={libro.id} 
-            genere ={libro.genere} 
-            titolo={libro.titolo}
-            anno={libro.anno}
-            autore={libro.autore} 
-            immagine={libro.immagine}
-            quantita = {libro.quantita}
-            numeroPagine={libro.numeroPagine}
-            isDisponibile={libro.isDisponibile}
+            {...libro}
+            // invece di tutto questa roba scritta sotto, 
+            // am scris spread operator adico asta {...libro}
+            // genere ={libro.genere} 
+            // titolo={libro.titolo}
+            // anno={libro.anno}
+            // autore={libro.autore} 
+            // immagine={libro.immagine}
+            // quantita = {libro.quantita}
+            // numeroPagine={libro.numeroPagine}
+            // isDisponibile={libro.isDisponibile}
             />
           
            )) }

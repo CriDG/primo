@@ -47,7 +47,9 @@ export default function Libro({ children, numeroPagine, anno, titolo, autore, ge
           
         </div>
       </div>
-      <Button des='Descrizione' msg='👍' />
+      {/* <Button des='Descrizione' msg='👍' /> */}
+      <Button des="Dettagli" msg = 'Uno dei libri migliori...'/>
+
       <LikeButton /> 
      
        
